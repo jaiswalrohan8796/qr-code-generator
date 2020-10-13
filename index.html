@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>QR-Code Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+        <header>
+            <div class="headline">
+                <h1>QR-Code Generator</h1>
+            </div>
+        </header>
+        <div class="rainbow-band"></div>
+        <main>
+            <div class="input-box">
+                <label for="input">Text: </label>
+                <input type="text" name="user-input" id="input-text">
+            </div>
+            
+            <canvas id="canvas"></canvas>
+            <div class="gen-btn">
+                <button onclick="generateQRCode()">Generate</button>
+            </div>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+        <script src="./assets/js/app.js"></script>
+  </body>
+</html>
