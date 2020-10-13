@@ -16,17 +16,24 @@
             </div>
         </header>
         <div class="rainbow-band"></div>
+        
         <main>
             <div class="input-box">
                 <label for="input">Text: </label>
                 <input type="text" name="user-input" id="input-text">
             </div>
+            <div class="qr-box">
+              <canvas id="canvas"></canvas>
+            </div>
             
-            <canvas id="canvas"></canvas>
             <div class="gen-btn">
-                <button onclick="generateQRCode()">Generate</button>
+              <a download="myqr-code.jpg" onclick="downloadImg(this)">Download</a>
+              <button onclick="generateQRCode()">Generate</button>
             </div>
         </main>
+        <footer>
+          <p>The word “<b>QR Code</b>” is registered trademark of DENSO WAVE INCORPORATION.</p>
+        </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
         <script src="./assets/js/app.js"></script>
   </body>
