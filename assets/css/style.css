@@ -51,8 +51,10 @@ input:focus {
     border-color:blueviolet
 }
 .gen-btn {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    
 
 }
 button {
@@ -62,7 +64,6 @@ button {
     color: aliceblue;
     border-radius: 5px;
     font-size: 1rem;
-    margin: 1rem;
     border: none;
 }
 button:active {
@@ -82,7 +83,6 @@ button:focus {
     color: aliceblue;
     border-radius: 5px;
     font-size: 1rem;
-    margin: 1rem;
 }
 .gen-btn a:active {
     background-color: aliceblue;
@@ -91,6 +91,30 @@ button:focus {
 .gen-btn a:focus {
     outline: none;
 }
+#download {
+    display: none;
+}
+
+
+
+
+
+
+
+input#input-check {
+    height: 30px;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 .qr-box {
     display: flex;
     justify-content: center;
@@ -110,4 +134,5 @@ footer {
 }
 footer p {
     margin: 0px;
+    text-align: center;
 }

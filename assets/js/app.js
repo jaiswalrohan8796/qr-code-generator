@@ -1,5 +1,7 @@
 var qr;
 var canva;
+const downloadBtn = document.getElementById('download');
+const backColor = document.getElementById('back-color');
 (function () {
      canva = document.getElementById('canvas');
      canva.style.display = 'none'
@@ -13,11 +15,13 @@ var canva;
 function generateQRCode() {
   var qrtext = document.getElementById("input-text").value;
   qr.set({
+    background: backColor,
     foreground: "black",
     size: 200,
     value: qrtext,
   });
   canva.style.display = 'block';
+  downloadBtn.style.display = 'block';
 }
 
  const downloadImg = function(el) {
