@@ -29,14 +29,29 @@
             <div class="gen-btn">
               <a  id="download" download="myqr-code.jpg" onclick="downloadImg(this)">Download</a>
               <div class="edit-box">
+                <img  id="edit-icon" src="./assets/edit.png" alt="edit">
                 <input type="checkbox" name="input-check" id="input-check">
                 <div class="editor">
-                  <select name="back-color" id="back-color">
-                    <option id="back-color-red" value="red">Red</option>
-                    <option id="back-color-green" value="green">Green</option>
-                    <option id="back-color-blue" value="blue">Blue</option>
-                    <option id="back-color-white" value="white">White</option>
-                  </select>
+                  <div class="editor-div">
+                    <div class="backround editor-items">
+                      <label for="back-color">Background Color</label>
+                      <select name="back-color" id="back-color">
+                        <option id="back-color-red" value="white">White</option>
+                        <option id="back-color-green" value="green">Green</option>
+                        <option id="back-color-blue" value="blue">Blue</option>
+                        <option id="back-color-white" value="black">Black</option>
+                      </select>
+                    </div>
+                    <div class="foreground editor-items">
+                      <label for="fore-color">Foreground Color</label>
+                      <select name="fore-color" id="fore-color">
+                        <option id="fore-color-red" value="black">Black</option>
+                        <option id="fore-color-green" value="green">Green</option>
+                        <option id="fore-color-blue" value="blue">Blue</option>
+                        <option id="fore-color-white" value="white">White</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button onclick="generateQRCode()">Generate</button>

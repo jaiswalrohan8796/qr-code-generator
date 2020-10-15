@@ -54,7 +54,7 @@ input:focus {
    display: flex;
    flex-direction: row;
    justify-content: center;
-    
+    margin-top: 1.5rem;
 
 }
 button {
@@ -92,29 +92,57 @@ button:focus {
     outline: none;
 }
 #download {
-    display: none;
+    display: block;
 }
 
 
+.edit-box {
+    width: 50px;
+    margin: 0px;
+}
+#edit-icon {
+    position: absolute;
+    transform: translate(8px,4px);
+    z-index: -2;
+    margin: 0px 0px;
 
-
-
-
-
+}
 input#input-check {
     height: 30px;
     width: 50px;
+    margin:0;
+    margin-top: 5px;
+    opacity: 0;
+}
+#input-check:checked ~ .editor {
+    display: block;
 }
 
 
+.editor {
+    position: relative;
+    top: 20px;
+    display: none;
 
-
-
-
-
-
-
-
+}
+.editor label {
+    font-size: 14px;
+}
+.editor select {
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+}
+.editor option {
+    height: 20px;
+}
+.editor-items {
+    margin: 0px 10px;
+}
+.editor-div {
+    display: flex;
+    justify-content: center;
+}
 .qr-box {
     display: flex;
     justify-content: center;
