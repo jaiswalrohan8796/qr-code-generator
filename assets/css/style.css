@@ -22,15 +22,21 @@ header h1 {
     padding-top: 20px;
 }
 .rainbow-band {
-    width: 100%;
+    color: white;
     height: 16px;
-    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgb(118, 30, 224) 92.5% );
+    margin-bottom: 3rem;
 }
+.rainbow-band p {
+    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgb(118, 30, 224) 92.5% );
+    margin: 0;
+    text-align: center;
+}
+
 .input-box {
     width: 100%;
     height: 50px;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 label {
     font-size: 1.4rem;
@@ -39,7 +45,7 @@ label {
 }
 input {
     height: 2.4rem;
-    width: 200px;
+    width: 300px;
     font-size: 1.2rem;
     border-radius: 15px;
     outline-style: none;
@@ -152,15 +158,4 @@ input#input-check {
     height: 250px;
     width: 250px;
 }
-footer {
-    height: 35px;
-    background-color: black;
-    color: aliceblue;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
-footer p {
-    margin: 0px;
-    text-align: center;
-}
+

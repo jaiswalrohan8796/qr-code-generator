@@ -15,12 +15,14 @@
                 <h1>QR-Code Generator</h1>
             </div>
         </header>
-        <div class="rainbow-band"></div>
+        <div class="rainbow-band">
+          <p>The word “<b>QR Code</b>” is registered trademark of DENSO WAVE INCORPORATION.</p>
+        </div>
         
         <main>
             <div class="input-box">
-                <label for="input">Text: </label>
-                <input type="text" name="user-input" id="input-text" placeholder="Enter here">
+                <label for="input">Text </label>
+                <input type="text" name="user-input" id="input-text" placeholder="Enter & See Real-Time changes">
             </div>
             <div class="qr-box">
               <canvas id="canvas"></canvas>
@@ -57,9 +59,6 @@
               <button onclick="generateQRCode()">Generate</button>
             </div>
         </main>
-        <footer>
-          <p>The word “<b>QR Code</b>” is registered trademark of DENSO WAVE INCORPORATION.</p>
-        </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
         <script src="./assets/js/app.js"></script>
   </body>
